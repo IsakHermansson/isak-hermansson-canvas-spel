@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+}
+
+
+/* Definerar layout av meny mha flexbox */
+#mainArea {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  height:100%;
+  
+}
+
+#menuContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 410px;
+    
+  }
+
+  .item {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: inherit;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 100%;
+    height: 140px;;
+    font-size: x-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 6px;
+    border-color: black;
+    border-style:solid;
+    background-color: rgb(185, 185, 185);
+    color:rgb(44, 44, 44);
+   /* border: 2px solid rgb(36, 4, 4);
+    background-color: rgb(78, 7, 7); */
+  }
+  
+  /* Klass som förstorar text i menyn när muspekaren är över*/
+  .item:hover {
+    font-size: xx-large;
+  }
+  
+  .itemHoover {
+    font-size: xx-large;
+  }
+  
+  .item > img {
+  padding:2px;
+  height:90%;
+  }
+
+
+html { 
+  background: url(../images/maincraft.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/zombie.css" />
+  <script src="https://koda.nu/simple.js"></script>
+  <script src="js/zombie.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death of da Zoombiies</title>
+</head>
+
+<body id="gameCanvas">
+  <div id="soundControl">
+    <input type="checkbox" id="sound" name="sound" value="on">
+    <label for="sound">Ljud av/på</label>
+  </div>
+  <div id="endGame" class="modal">
+    <div class="modal-content">
+      <p>You failed to save the world</p>
+      <button id="endButton" type="button">Tillbaka</button>
+    </div>
+
+  </div>
+  <div id="levelDone" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p>Nivå Klarad!</p>
+      <button id="playAgainButton" type="button">Nästa nivå</button>
+      <button id="closeGame" type="button">Avsluta</button>
+  
+    </div>
+
+  </div>
+  <div id="welcome" class="modal">
+    <div class="modal-content">
+      <p>Döda alla zombies innan tiden är ute. Används a s w d för att styra och vänster muknapp för att skjuta zombies. Du kan avfyra en misil med space, men du har bara en misil.</p>
+      <button id="startButton" type="button">Start</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
